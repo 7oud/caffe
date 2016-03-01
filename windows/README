@@ -1,3 +1,5 @@
+[添加基于caffe lib的新工程]
+
 1. 添加(empty)工程到sln
 2. 删除win32相关配置
 3. 在Property Manager导入CommonSetting.props
@@ -6,7 +8,8 @@
 6. 工程属性C/C++ -> Warning Level改为Level1(/W1)
 7. 工程属性C/C++ -> Preprocessor修改Preprocessor Definitions(参照caffe工程)
 8. 工程属性Build Events -> Post-Build Event修改Command Line(参照caffe工程)
+9. 编辑.vcxproj，在<ImportGroup>加入<Import Project="..\..\..\NugetPackages\hdf5-v120-complete...>，参考caffe.vcxproj
+10.编辑.vcxproj，在<Target>加入<Error Condition="!Exists('..\..\..\NugetPackages\hdf5-v120-complete...>，参考caffe.vcxproj
 
-
-PS. 编译提示link hdf库失败，调查原因中
+PS. (9), (10)两项用来修正NuGet配置hdf5 package的bug
 
