@@ -4,4 +4,5 @@
 4. 在linker添加libcaffe.lib等
 5. 通过NuGet Package Manager Console添加相关依赖库
 6. 工程属性C/C++ -> Warning Level改为Level1(/W1)
-7. 工程属性Build Events ->Post-Build Event修改Command Line(参照caffe工程)
+7. 工程属性C/C++ -> Preprocessor修改Preprocessor Definitions(参照caffe工程)
+8. 工程属性Build Events -> Post-Build Event修改Command Line(参照caffe工程)
