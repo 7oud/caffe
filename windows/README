@@ -1,0 +1,7 @@
+1. 添加(empty)工程到sln
+2. 删除win32相关配置
+3. 在Property Manager导入CommonSetting.props
+4. 在linker添加libcaffe.lib等
+5. 通过NuGet Package Manager Console添加相关依赖库
+6. 工程属性C/C++ -> Warning Level改为Level1(/W1)
+7. 工程属性Build Events ->Post-Build Event修改Command Line(参照caffe工程)
