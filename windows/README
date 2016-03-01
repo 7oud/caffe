@@ -6,3 +6,7 @@
 6. 工程属性C/C++ -> Warning Level改为Level1(/W1)
 7. 工程属性C/C++ -> Preprocessor修改Preprocessor Definitions(参照caffe工程)
 8. 工程属性Build Events -> Post-Build Event修改Command Line(参照caffe工程)
+
+
+PS. 编译提示link hdf库失败，调查原因中
+
