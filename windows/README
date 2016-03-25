@@ -1,4 +1,4 @@
-[添加基于caffe lib的新工程]
+[添加基于caffe lib的新工程exe]
 
 1. 添加(empty)工程到sln
 2. 删除win32相关配置
@@ -12,4 +12,12 @@
 10.编辑.vcxproj，在<Target>加入<Error Condition="!Exists('..\..\..\NugetPackages\hdf5-v120-complete...>，参考caffe.vcxproj
 
 PS. (9), (10)两项用来修正NuGet配置hdf5 package的bug
+
+
+[添加基于caffe lib的新工程dll]
+1. 尚未找到成功添加dll工程的方法
+2. 目前添加的dll工程会出现caffe.pb.h的编译error
+3. 修改caffe.managed工程可以实现dll，删除clr支持
+4. c/c++ -> General -> Treat Warning As Eror = No
+5. caller(exe)工程的Post-Build Event增加GflagsNaming.cmd，参照caffe
 
