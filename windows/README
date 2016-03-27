@@ -17,6 +17,8 @@ PS. (9), (10)两项用来修正NuGet配置hdf5 package的bug
 [添加基于caffe lib的新工程dll]
 1. 不添加预编译头文件stdafx.h，不在其中#include <Windows.h>，与caffe.pb.h冲突
 2. cpp包含接口头文件，并在接口头文件加入dllexport标识，会生成lib文件
-4. c/c++ -> General -> Treat Warning As Eror = No
-5. caller(exe)工程的Post-Build Event增加GflagsNaming.cmd，参照caffe
+3. c/c++ -> General -> Treat Warning As Eror = No
+4. 为dll工程添加libcaffe的reference
+5. Use Library Dependency Inputs 设置为 True
+6. caller(exe)工程的Post-Build Event增加GflagsNaming.cmd，参照caffe
 

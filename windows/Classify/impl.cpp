@@ -11,7 +11,7 @@ int init_model(const string& model_file,
 	const string& label_file)
 {
 	//levels INFO, WARNING, ERROR, and FATAL are 0, 1, 2, and 3
-	//::FLAGS_minloglevel = 4;
+	::FLAGS_minloglevel = 4;
 
 	g_classifier = new Classifier(model_file, trained_file, mean_file, label_file);
 
