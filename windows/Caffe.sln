@@ -53,6 +53,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Classify", "Classify\Classi
 		{A9ACEF83-7B63-4574-A554-89CE869EA141} = {A9ACEF83-7B63-4574-A554-89CE869EA141}
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Caller", "Caller\Caller.vcxproj", "{F6AC9C37-4D98-45F2-87B6-50EAAB762EEB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C1639B19-DE1F-45D7-832B-9900B213AEB3} = {C1639B19-DE1F-45D7-832B-9900B213AEB3}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -95,6 +100,10 @@ Global
 		{C1639B19-DE1F-45D7-832B-9900B213AEB3}.Debug|x64.Build.0 = Debug|x64
 		{C1639B19-DE1F-45D7-832B-9900B213AEB3}.Release|x64.ActiveCfg = Release|x64
 		{C1639B19-DE1F-45D7-832B-9900B213AEB3}.Release|x64.Build.0 = Release|x64
+		{F6AC9C37-4D98-45F2-87B6-50EAAB762EEB}.Debug|x64.ActiveCfg = Debug|x64
+		{F6AC9C37-4D98-45F2-87B6-50EAAB762EEB}.Debug|x64.Build.0 = Debug|x64
+		{F6AC9C37-4D98-45F2-87B6-50EAAB762EEB}.Release|x64.ActiveCfg = Release|x64
+		{F6AC9C37-4D98-45F2-87B6-50EAAB762EEB}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
