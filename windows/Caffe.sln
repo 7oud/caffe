@@ -55,15 +55,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{E2EF
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "caffe.managed", "caffe.managed\caffe.managed.vcxproj", "{350020CA-75B9-425E-85CA-DD8CF8CFBA9B}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Classify", "Classify\Classify.vcxproj", "{C1639B19-DE1F-45D7-832B-9900B213AEB3}"
-	ProjectSection(ProjectDependencies) = postProject
-		{A9ACEF83-7B63-4574-A554-89CE869EA141} = {A9ACEF83-7B63-4574-A554-89CE869EA141}
-	EndProjectSection
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Caller", "Caller\Caller.vcxproj", "{F6AC9C37-4D98-45F2-87B6-50EAAB762EEB}"
-	ProjectSection(ProjectDependencies) = postProject
-		{C1639B19-DE1F-45D7-832B-9900B213AEB3} = {C1639B19-DE1F-45D7-832B-9900B213AEB3}
-	EndProjectSection
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "convert_cifar_data", "convert_cifar_data\convert_cifar_data.vcxproj", "{B166B643-C90B-4903-B735-D2D4ED4F2248}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "classification", "classification\classification.vcxproj", "{273E7766-61AA-437C-BCA9-4CA7FE0484D4}"
@@ -77,6 +68,16 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "upgrade_net_proto_text", "upgrade_net_proto_text\upgrade_net_proto_text.vcxproj", "{4E201A07-4464-4ECF-8D5E-6B7E3B2D896B}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "upgrade_solver_proto_text", "upgrade_solver_proto_text\upgrade_solver_proto_text.vcxproj", "{E1185C4E-1AEA-4E0E-BE85-2671E065016A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Classify", "Classify\Classify.vcxproj", "{C1639B19-DE1F-45D7-832B-9900B213AEB3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A9ACEF83-7B63-4574-A554-89CE869EA141} = {A9ACEF83-7B63-4574-A554-89CE869EA141}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Caller", "Caller\Caller.vcxproj", "{F6AC9C37-4D98-45F2-87B6-50EAAB762EEB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C1639B19-DE1F-45D7-832B-9900B213AEB3} = {C1639B19-DE1F-45D7-832B-9900B213AEB3}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
